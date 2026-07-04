@@ -25,3 +25,6 @@ alias tk="tmux kill-session -t"
 # Docker
 alias d="docker"
 alias dc="docker compose"
+
+# Spacedrep
+alias sr="spacedrep"
