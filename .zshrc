@@ -37,3 +37,5 @@ function y() {
 	command rm -f -- "$tmp"
 }
 export EDITOR="nvim"
+export PATH=$PATH:$(go env GOPATH)/bin
+eval "$(zoxide init zsh)"
