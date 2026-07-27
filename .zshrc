@@ -39,3 +39,17 @@ function y() {
 export EDITOR="nvim"
 export PATH=$PATH:$(go env GOPATH)/bin
 eval "$(zoxide init zsh)"
+
+# Use vim mode for terminal
+bindkey -v
+
+function zle-keymap-select zle-line-init {
+  case $KEYMAP in
+    vicmd) echo -ne '\e[2 q';;      # block cursor for normal mode
+    *) echo -ne '\e[6 q';;          # bar cursor for insert mode
+  esac
+}
+
+zle -N zle-keymap-select
+zle -N zle-line-init
+echo -ne '\e[6 q'  # start with bar cursor
