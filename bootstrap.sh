@@ -3,6 +3,7 @@ set -euo pipefail
 
 REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}"
+MACOS_APP_SUPPORT="$HOME/Library/Application Support"
 
 # First arg: path relative to this repo. Second arg: absolute symlink path.
 link_pair() {
@@ -23,5 +24,6 @@ link_pair ".aerospace.toml" "$HOME/.aerospace.toml"
 
 link_pair "ghostty/config" "$CONFIG/ghostty/config"
 link_pair "karabiner" "$CONFIG/karabiner"
+link_pair "lazygit/config.yml" "$MACOS_APP_SUPPORT/lazygit/config.yml"
 
 echo "Done."
