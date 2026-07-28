@@ -33,6 +33,7 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  
 
 # Yazi wrapper to change directory after running yazi
+eval "$(zoxide init zsh)"
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	command yazi "$@" --cwd-file="$tmp"
@@ -42,4 +43,3 @@ function y() {
 }
 export EDITOR="nvim"
 export PATH=$PATH:$(go env GOPATH)/bin
-eval "$(zoxide init zsh)"
