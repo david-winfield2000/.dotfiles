@@ -3,4 +3,4 @@ promptToReturnFromSubprocess: false
 gui:
   theme:
     selectedLineBgColor:
-      - black
+      - reverse
