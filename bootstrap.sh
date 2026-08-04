@@ -25,5 +25,6 @@ link_pair ".aerospace.toml" "$HOME/.aerospace.toml"
 link_pair "ghostty/config" "$CONFIG/ghostty/config"
 link_pair "karabiner" "$CONFIG/karabiner"
 link_pair "lazygit/config.yml" "$MACOS_APP_SUPPORT/lazygit/config.yml"
+link_pair "linearmouse/linearmouse.json" "$MACOS_APP_SUPPORT/linearmouse/linearmouse.json"
 
 echo "Done."
