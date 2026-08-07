@@ -1,0 +1,172 @@
+🗑️  Uninstalling Homebrew casks and Homebrew itself...
+📤 Uninstalling casks from Brewfile...
+🗑️  Uninstalling cask: nikitabobko/tap/aerospace
+==> Uninstalling Cask aerospace
+==> Backing up App 'AeroSpace.app' to '/opt/homebrew/Caskroom/aerospace/0.21.3-Beta/AeroSpace-v0.21.3-Beta/AeroSpace.app'
+==> Removing App '/Applications/AeroSpace.app'
+==> Unlinking Binary '/opt/homebrew/share/zsh/site-functions/_aerospace'
+==> Unlinking Binary '/opt/homebrew/etc/bash_completion.d/aerospace'
+==> Unlinking Binary '/opt/homebrew/share/fish/vendor_completions.d/aerospace.fish'
+==> Unlinking Binary '/opt/homebrew/bin/aerospace'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-exec-and-forget.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-false.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-flatten-workspace-tree.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-focus-back-and-forth.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-focus-monitor.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-focus.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-fullscreen.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-join-with.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-layout.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-list-apps.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-list-exec-env-vars.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-list-modes.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-list-monitors.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-list-windows.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-list-workspaces.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-macos-native-fullscreen.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-macos-native-minimize.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-mode.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-move-mouse.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-move-node-to-monitor.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-move-node-to-workspace.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-move-workspace-to-monitor.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-move.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-reload-config.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-resize.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-run-callback.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-split.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-subscribe.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-summon-workspace.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-swap.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-test-not.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-test.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-trigger-binding.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-true.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-volume.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-workspace-back-and-forth.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-workspace.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-balance-sizes.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-close-all-windows-but-current.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-close.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-config.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-debug-windows.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-echo.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-enable.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/aerospace-eval.1'
+==> Purging files for version 0.21.3-Beta of Cask aerospace
+🗑️  Uninstalling cask: linearmouse
+==> Uninstalling Cask linearmouse
+==> Quitting application 'com.lujjjh.LinearMouse'...
+Application 'com.lujjjh.LinearMouse' quit successfully.
+==> Removing login item /Applications/LinearMouse.app
+==> Removing login item LinearMouse
+==> Backing up App 'LinearMouse.app' to '/opt/homebrew/Caskroom/linearmouse/0.11.4/LinearMouse.app'
+==> Removing App '/Applications/LinearMouse.app'
+==> Purging files for version 0.11.4 of Cask linearmouse
+🗑️  Uninstalling cask: maccy
+==> Uninstalling Cask maccy
+==> Quitting application 'org.p0deje.Maccy'...
+Application 'org.p0deje.Maccy' quit successfully.
+==> Backing up App 'Maccy.app' to '/opt/homebrew/Caskroom/maccy/2.7.0/Maccy.app'
+==> Removing App '/Applications/Maccy.app'
+==> Purging files for version 2.7.0 of Cask maccy
+🗑️  Uninstalling cask: ghostty
+==> Uninstalling Cask ghostty
+==> Backing up App 'Ghostty.app' to '/opt/homebrew/Caskroom/ghostty/1.3.1/Ghostty.app'
+==> Removing App '/Applications/Ghostty.app'
+==> Unlinking Manpage '/opt/homebrew/share/man/man1/ghostty.1'
+==> Unlinking Manpage '/opt/homebrew/share/man/man5/ghostty.5'
+==> Unlinking Bash Completion '/opt/homebrew/etc/bash_completion.d/ghostty'
+==> Unlinking Fish Completion '/opt/homebrew/share/fish/vendor_completions.d/ghostty.fish'
+==> Unlinking Zsh Completion '/opt/homebrew/share/zsh/site-functions/_ghostty'
+==> Purging files for version 1.3.1 of Cask ghostty
+🗑️  Uninstalling cask: karabiner-elements
+==> Uninstalling Cask karabiner-elements
+==> Running uninstall script /Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/scripts/uninstall/remove_files.sh
+==> Removing launchctl service org.pqrs.karabiner.agent.karabiner_grabber
+==> Removing launchctl service org.pqrs.karabiner.agent.karabiner_observer
+==> Removing launchctl service org.pqrs.karabiner.karabiner_console_user_server
+==> Removing launchctl service org.pqrs.karabiner.karabiner_grabber
+==> Removing launchctl service org.pqrs.karabiner.karabiner_observer
+==> Removing launchctl service org.pqrs.karabiner.karabiner_session_monitor
+==> Removing launchctl service org.pqrs.karabiner.NotificationWindow
+==> Signalling 'TERM' to application ID 'org.pqrs.Karabiner-Menu'
+==> Signalling 'TERM' to application ID 'org.pqrs.Karabiner-NotificationWindow'
+==> Running uninstall script /Library/Application Support/org.pqrs/Karabiner-Elements/uninstall_core.sh
+==> Uninstalling packages with `sudo` (which may request your password)...
+org.pqrs.Karabiner-DriverKit-VirtualHIDDevice
+org.pqrs.Karabiner-Elements
+==> Removing files:
+/Library/Application Support/org.pqrs
+==> Unlinking Binary '/opt/homebrew/bin/karabiner_cli'
+==> Purging files for version 16.1.0 of Cask karabiner-elements
+🗑️  Uninstalling cask: font-symbols-only-nerd-font
+==> Uninstalling Cask font-symbols-only-nerd-font
+==> Backing up Font 'SymbolsNerdFont-Regular.ttf' to '/opt/homebrew/Caskroom/font-symbols-only-nerd-font/3.5.0/SymbolsNerdFont-Regular.ttf'
+==> Removing Font '/Users/davidwinfield/Library/Fonts/SymbolsNerdFont-Regular.ttf'
+==> Backing up Font 'SymbolsNerdFontMono-Regular.ttf' to '/opt/homebrew/Caskroom/font-symbols-only-nerd-font/3.5.0/SymbolsNerdFontMono-Regular.ttf'
+==> Removing Font '/Users/davidwinfield/Library/Fonts/SymbolsNerdFontMono-Regular.ttf'
+==> Purging files for version 3.5.0 of Cask font-symbols-only-nerd-font
+🗑️  Uninstalling Homebrew...
+Warning: This script will remove:
+/etc/paths.d/homebrew
+/opt/homebrew/.claude/
+/opt/homebrew/.codex/
+/opt/homebrew/.cursor/
+/opt/homebrew/.devcontainer/
+/opt/homebrew/.dockerignore
+/opt/homebrew/.editorconfig
+/opt/homebrew/.git/
+/opt/homebrew/.github/
+/opt/homebrew/.gitignore
+/opt/homebrew/.shellcheckrc
+/opt/homebrew/.sublime/
+/opt/homebrew/.vale.ini
+/opt/homebrew/.vscode/
+/opt/homebrew/bin/brew
+/opt/homebrew/Caskroom/
+/opt/homebrew/Cellar/
+/opt/homebrew/CHANGELOG.md
+/opt/homebrew/CODEOWNERS
+/opt/homebrew/completions/
+/opt/homebrew/CONTRIBUTING.md
+/opt/homebrew/Dockerfile
+/opt/homebrew/docs/
+/opt/homebrew/Library/
+/opt/homebrew/LICENSE.txt
+/opt/homebrew/manpages/
+/opt/homebrew/package/
+/opt/homebrew/README.md
+/Users/davidwinfield/Library/Caches/Homebrew/
+/Users/davidwinfield/Library/Logs/Homebrew/
+==> Removing Homebrew installation...
+Warning: Failed to delete /etc/paths.d/homebrew
+rm: /etc/paths.d/homebrew: Permission denied
+==> Removing empty directories...
+==> /usr/bin/sudo /usr/bin/find /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/opt /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/Frameworks -name .DS_Store -delete
+==> /usr/bin/sudo /usr/bin/find /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/opt /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/Frameworks -depth -type d -empty -exec rmdir {} ;
+==> Homebrew uninstalled!
+The following possible Homebrew files were not deleted:
+/opt/homebrew/.gitattributes
+/opt/homebrew/AGENTS.md
+/opt/homebrew/CLAUDE.md
+/opt/homebrew/etc/
+/opt/homebrew/lib/
+/opt/homebrew/share/
+/opt/homebrew/var/
+You may wish to remove them yourself.
+
+🧹 Cleaning up PATH modifications...
+✅ Homebrew and all packages have been uninstalled!
+Removing symlinks created by bootstrap (same paths as unbootstrap list)
+  removed /Users/davidwinfield/.zshrc
+  removed /Users/davidwinfield/.bashrc
+  removed /Users/davidwinfield/.bash_aliases
+  removed /Users/davidwinfield/.gitconfig
+  removed /Users/davidwinfield/.tmux.conf
+  removed /Users/davidwinfield/.aerospace.toml
+  removed /Users/davidwinfield/.config/ghostty/config
+  removed /Users/davidwinfield/.config/karabiner
+  removed /Users/davidwinfield/Library/Application Support/lazygit/config.yml
+Done.
