@@ -2,9 +2,6 @@
 alias ..="cd .."
 alias ~="cd ~"
 
-# Listing
-alias la="ls -A"
-
 # Git
 alias lg="lazygit"
 
