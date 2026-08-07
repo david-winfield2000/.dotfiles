@@ -34,9 +34,23 @@ fi
 echo "🗑️  Uninstalling Homebrew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
 
+# Clean up leftover Homebrew files and directories with sudo
+echo "🧹 Cleaning up leftover Homebrew files..."
+if [[ -d /opt/homebrew ]]; then
+    echo "  Removing leftover files in /opt/homebrew..."
+    sudo rm -rf /opt/homebrew/* 2>/dev/null || true
+    sudo rmdir /opt/homebrew 2>/dev/null || true
+fi
+
+# Remove /etc/paths.d/homebrew if it exists
+if [[ -f /etc/paths.d/homebrew ]]; then
+    echo "  Removing /etc/paths.d/homebrew..."
+    sudo rm -f /etc/paths.d/homebrew 2>/dev/null || true
+fi
+
 # Clean up PATH modifications from shell profile
 if [[ $(uname -m) == "arm64" ]]; then
-    echo "🧹 Cleaning up PATH modifications..."
+    echo "🧹 Cleaning up PATH modifications from shell profile..."
     if [[ -f ~/.zprofile ]]; then
         sed -i '' '/eval.*\/opt\/homebrew\/bin\/brew shellenv/d' ~/.zprofile
     fi

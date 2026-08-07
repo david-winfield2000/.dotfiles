@@ -30,5 +30,6 @@ remove_symlink "$HOME/.aerospace.toml"
 remove_symlink "$CONFIG/ghostty/config"
 remove_symlink "$CONFIG/karabiner"
 remove_symlink "$MACOS_APP_SUPPORT/lazygit/config.yml"
+remove_symlink "$MACOS_APP_SUPPORT/linearmouse/linearmouse.json"
 
 echo "Done."
