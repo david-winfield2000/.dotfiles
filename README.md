@@ -8,8 +8,8 @@ Now that problem is no more!
 
 ## Setup
 
-Clone this repo, `cd` into it, and run `install.sh` + `bootstrap.sh` to install all programs with Homebrew + symlink configurations
+Clone this repo, `cd` into it, and run `setup.sh`
 
 ## Teardown
 
-`cd` into this directory, and run `uninstall.sh` and `unbootstrap.sh` to uninstall all programs and Homebrew + remove all symlinked configurations
+`cd` into this directory, and run `teardown.sh`

@@ -5,7 +5,6 @@ processes=(
   "LinearMouse"
   "Maccy"
   "Ghostty"
-  "Docker"
 )
 
 for process in "${processes[@]}"; do

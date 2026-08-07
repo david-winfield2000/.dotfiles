@@ -4,7 +4,6 @@ cask "nikitabobko/tap/aerospace"
 cask "linearmouse"
 cask "maccy"
 cask "ghostty"
-cask "docker-desktop"
 cask "karabiner-elements"
 
 brew "neovim"

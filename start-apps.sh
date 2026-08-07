@@ -5,7 +5,6 @@ apps=(
   "LinearMouse"
   "Maccy"
   "Ghostty"
-  "Docker"
   "Karabiner-Elements"
 )
 
