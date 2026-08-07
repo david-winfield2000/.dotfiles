@@ -1,4 +1,6 @@
-cask "aerospace"
+tap "nikitabobko/tap"
+
+cask "nikitabobko/tap/aerospace"
 cask "linearmouse"
 cask "maccy"
 cask "ghostty"
