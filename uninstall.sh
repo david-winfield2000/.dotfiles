@@ -2,7 +2,7 @@
 
 set -e
 
-echo "🗑️  Uninstalling all Homebrew packages and Homebrew itself..."
+echo "🗑️  Uninstalling Homebrew casks and Homebrew itself..."
 
 # Check if Homebrew is installed
 if ! command -v brew &> /dev/null; then
@@ -10,54 +10,17 @@ if ! command -v brew &> /dev/null; then
     exit 0
 fi
 
-# Kill all running processes from applications (except Ghostty, which we'll kill last)
-echo "🛑 Stopping running processes..."
-
-# Kill processes in order (Ghostty last)
-declare -a PROCESSES=(
-    "AeroSpace"
-    "linearmouse"
-    "Maccy"
-    "Docker Desktop"
-    "Docker"
-    "com.docker.hyperkit"
-    "Karabiner-Elements"
-    "karabiner_grabber"
-    "karabiner_observer"
-)
-
-for process in "${PROCESSES[@]}"; do
-    if pgrep -f "$process" > /dev/null 2>&1; then
-        echo "🛑 Stopping $process..."
-        pkill -f "$process" || true
-        sleep 1
-    fi
-done
-
-# Kill Ghostty last (in case this terminal is running in Ghostty)
-if pgrep -f "Ghostty" > /dev/null 2>&1; then
-    echo "🛑 Stopping Ghostty (last)..."
-    pkill -f "Ghostty" || true
-    sleep 1
-fi
-
-# Uninstall all packages from Brewfile
-echo "📤 Uninstalling packages from Brewfile..."
+# Uninstall casks from Brewfile (formulae will be removed automatically with Homebrew)
+echo "📤 Uninstalling casks from Brewfile..."
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 if [[ -f "$SCRIPT_DIR/Brewfile" ]]; then
-    # Get list of installed formulae and casks from Brewfile
     while IFS= read -r line; do
         # Skip empty lines and comments
         [[ -z "$line" || "$line" =~ ^[[:space:]]*# ]] && continue
 
-        if [[ "$line" =~ ^brew[[:space:]]\"(.+)\" ]]; then
-            package="${BASH_REMATCH[1]}"
-            if brew list "$package" &> /dev/null; then
-                echo "🗑️  Uninstalling formula: $package"
-                brew uninstall --ignore-dependencies "$package" || true
-            fi
-        elif [[ "$line" =~ ^cask[[:space:]]\"(.+)\" ]]; then
+        # Only uninstall casks (formulae will be removed with Homebrew)
+        if [[ "$line" =~ ^cask[[:space:]]\"(.+)\" ]]; then
             package="${BASH_REMATCH[1]}"
             if brew list --cask "$package" &> /dev/null; then
                 echo "🗑️  Uninstalling cask: $package"
@@ -67,7 +30,7 @@ if [[ -f "$SCRIPT_DIR/Brewfile" ]]; then
     done < "$SCRIPT_DIR/Brewfile"
 fi
 
-# Uninstall Homebrew itself
+# Uninstall Homebrew itself (this removes all formulae automatically)
 echo "🗑️  Uninstalling Homebrew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
 
