@@ -6,4 +6,10 @@ I use these configs on several different computers and would get frustrated when
 
 Now that problem is no more!
 
-I simply clone this repo into my computer, and run `bootstrap.sh` to symlink these config files to my system.
+## Setup
+
+Clone this repo, `cd` into it, and run `install.sh` + `bootstrap.sh` to install all programs with Homebrew + symlink configurations
+
+## Teardown
+
+`cd` into this directory, and run `uninstall.sh` and `unbootstrap.sh` to uninstall all programs and Homebrew + remove all symlinked configurations
