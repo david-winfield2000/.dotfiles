@@ -142,3 +142,11 @@ revenv() {
     fi
     venv force
 }
+
+# Use vi keybindings in Bash
+set -o vi
+
+# Change cursor based on Bash vi editing mode
+bind 'set show-mode-in-prompt on'
+bind 'set vi-ins-mode-string "\1\e[6 q\2"'
+bind 'set vi-cmd-mode-string "\1\e[2 q\2"'
