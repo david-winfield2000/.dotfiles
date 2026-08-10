@@ -2,8 +2,11 @@
 alias ..="cd .."
 alias ~="cd ~"
 
-# Git
+# Lazygit
 alias lg="lazygit"
+
+# Yazi
+alias y="yazi"
 
 # Python
 alias python="python3"
