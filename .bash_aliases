@@ -5,9 +5,6 @@ alias ~="cd ~"
 # Lazygit
 alias lg="lazygit"
 
-# Yazi
-alias y="yazi"
-
 # Python
 alias python="python3"
 
