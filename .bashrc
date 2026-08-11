@@ -150,3 +150,13 @@ set -o vi
 bind 'set show-mode-in-prompt on'
 bind 'set vi-ins-mode-string "\1\e[6 q\2"'
 bind 'set vi-cmd-mode-string "\1\e[2 q\2"'
+export PATH="$HOME/.local/bin:$PATH"
+
+# Yazi setup
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+	command rm -f -- "$tmp"
+}
