@@ -38,3 +38,5 @@ function y() {
 }
 export EDITOR="nvim"
 export PATH=$PATH:$(go env GOPATH)/bin
+
+alias sr="spacedrep"
