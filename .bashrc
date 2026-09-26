@@ -137,3 +137,5 @@ revenv() {
     fi
     venv force
 }
+
+. "$HOME/.local/bin/env"
