@@ -40,3 +40,5 @@ export EDITOR="nvim"
 export PATH=$PATH:$(go env GOPATH)/bin
 
 alias sr="spacedrep"
+
+. "$HOME/.local/bin/env"
