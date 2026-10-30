@@ -7,6 +7,10 @@ KEYTIMEOUT=1
 # Reload should refresh zsh config, not bash
 alias reload="source ~/.zshrc"
 
+tn() {
+    tmux new -s "${1:-$(basename "$PWD")}"
+}
+
 venv() {
     if [ ! -d "venv" ]; then
         python -m venv venv
