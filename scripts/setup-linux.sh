@@ -14,7 +14,7 @@ link() {
 echo "Installing apt packages..."
 sudo apt-get update
 sudo apt-get install -y git curl tar build-essential tmux python3 python3-venv \
-    jq fd-find ripgrep fzf zoxide bash-completion
+    jq unzip fd-find ripgrep fzf zoxide bash-completion
 
 echo "Installing neovim to /opt/nvim..."
 if [ ! -x /opt/nvim/bin/nvim ]; then
@@ -25,6 +25,15 @@ if [ ! -x /opt/nvim/bin/nvim ]; then
     sudo rm -rf /opt/nvim
     sudo mkdir -p /opt/nvim
     sudo cp -r "$tmp"/. /opt/nvim/
+    rm -rf "$tmp"
+fi
+
+echo "Installing yazi..."
+if ! command -v yazi &>/dev/null; then
+    tmp="$(mktemp -d)"
+    curl -fsSL -o "$tmp/yazi.zip" https://github.com/sxyazi/yazi/releases/latest/download/yazi-x86_64-unknown-linux-gnu.zip
+    unzip -q "$tmp/yazi.zip" -d "$tmp"
+    sudo cp "$tmp"/yazi-*/yazi "$tmp"/yazi-*/ya /usr/local/bin/
     rm -rf "$tmp"
 fi
 
