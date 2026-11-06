@@ -18,9 +18,14 @@ sudo apt-get install -y git curl tar build-essential tmux python3 python3-venv \
 
 echo "Installing neovim to /opt/nvim..."
 if [ ! -x /opt/nvim/bin/nvim ]; then
-    sudo rm -rf /opt/nvim  # clear partial installs (overlayfs breaks hardlinks into existing dirs)
+    # extract elsewhere then copy: tar into /opt fails on overlayfs (EXDEV)
+    tmp="$(mktemp -d)"
     curl -fsSL https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz \
-        | sudo tar -xz --one-top-level=/opt/nvim --strip-components=1
+        | tar -xz -C "$tmp" --strip-components=1
+    sudo rm -rf /opt/nvim
+    sudo mkdir -p /opt/nvim
+    sudo cp -r "$tmp"/. /opt/nvim/
+    rm -rf "$tmp"
 fi
 
 echo "Installing lazygit..."
