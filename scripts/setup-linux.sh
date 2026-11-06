@@ -14,7 +14,7 @@ link() {
 echo "Installing apt packages..."
 sudo apt-get update
 sudo apt-get install -y git curl tar build-essential tmux python3 python3-venv \
-    jq unzip fd-find ripgrep fzf zoxide bash-completion
+    jq unzip file fd-find ripgrep fzf zoxide bash-completion
 
 echo "Installing neovim to /opt/nvim..."
 if [ ! -x /opt/nvim/bin/nvim ]; then
@@ -62,5 +62,16 @@ link .gitconfig "$HOME/.gitconfig"
 link .tmux.conf "$HOME/.tmux.conf"
 link ghostty/config "$CONFIG/ghostty/config"
 link lazygit/config.yml "$CONFIG/lazygit/config.yml"
+
+echo "Cloning nvim config..."
+if [ ! -d "$CONFIG/nvim" ]; then
+    GIT_CONFIG_GLOBAL=/dev/null git clone https://github.com/david-winfield2000/nvim-config "$CONFIG/nvim"
+fi
+
+echo "Installing tmux plugin manager..."
+if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
+  GIT_CONFIG_GLOBAL=/dev/null git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
+fi
+GIT_CONFIG_GLOBAL=/dev/null "$HOME/.tmux/plugins/tpm/bin/install_plugins"
 
 echo "Done. Run: source ~/.bashrc"
