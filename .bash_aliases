@@ -20,3 +20,17 @@ alias tk="tmux kill-session -t"
 
 # Claude
 alias cc="claude"
+
+tn() {
+    tmux new -s "${1:-$(basename "$PWD")}"
+}
+
+# Yazi wrapper to change directory after running yazi
+y() {
+    local tmp cwd
+    tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+    command yazi "$@" --cwd-file="$tmp"
+    IFS= read -r -d '' cwd < "$tmp"
+    [ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+    command rm -f -- "$tmp"
+}
