@@ -17,3 +17,6 @@ alias reload="source ~/.bashrc"
 alias t="tmux"
 alias ta="tmux a"
 alias tk="tmux kill-session -t"
+
+# Claude
+alias cc="claude"
