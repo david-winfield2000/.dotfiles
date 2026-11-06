@@ -14,7 +14,12 @@ link() {
 echo "Installing apt packages..."
 sudo apt-get update
 sudo apt-get install -y git curl tar build-essential tmux python3 python3-venv \
-    jq unzip file fd-find ripgrep fzf zoxide bash-completion
+    jq unzip file fd-find ripgrep fzf zoxide bash-completion \
+    golang-go ffmpeg p7zip-full poppler-utils imagemagick
+
+echo "Linking fd (Debian ships it as fdfind)..."
+mkdir -p "$HOME/.local/bin"
+ln -sfn "$(command -v fdfind)" "$HOME/.local/bin/fd"
 
 echo "Installing neovim to /opt/nvim..."
 if [ ! -x /opt/nvim/bin/nvim ]; then

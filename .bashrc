@@ -139,3 +139,8 @@ revenv() {
 }
 
 . "$HOME/.local/bin/env"
+
+# zoxide, fd symlink dir, and Go binaries
+export PATH="$HOME/.local/bin:$PATH"
+command -v zoxide &>/dev/null && eval "$(zoxide init bash)"
+command -v go &>/dev/null && export PATH="$PATH:$(go env GOPATH)/bin"
