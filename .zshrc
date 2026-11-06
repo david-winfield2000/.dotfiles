@@ -42,3 +42,6 @@ export PATH=$PATH:$(go env GOPATH)/bin
 alias sr="spacedrep"
 
 . "$HOME/.local/bin/env"
+
+# Remote Ollama server
+export OLLAMA_HOST=http://192.168.0.249:11434
